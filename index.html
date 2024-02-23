@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" 
+    rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+
+<body>
+    <header>
+        <img src="imagenes/Logo.jpg" alt="Logotipo de Alura-LATAM" class="logo">
+    </header>
+
+    <main >
+        <div class="container">
+            <label for="textoent" class="entrada">Mensaje</label>
+            <textarea class="texto-entrada" placeholder="Ingrese texto aquí" id="textoent" name="textoent" cols="30" rows="10"></textarea>
+            <img src="imagenes/Muñeco.png" alt="Muñeco de busqueda." class="muneco">
+            <img src="imagenes/Frame 5.png" alt="Mensaje de no proceso." class="mune-mensaje">
+
+            <textarea name="textosal" id="textosal" cols="30" rows="10" class="texto-salida" hidden></textarea>
+
+            <div class="container-botones1">
+                <p class="texto-botones">Solo letras minusculas y sin acentos.</p>
+                <button class="botones encriptar" onclick="encriptar()" id="encriptar">Encriptar</button>
+                <button class="botones desencriptar" onclick="desencriptar()" id="desencriptar">Desencriptar</button>
+            </div>
+            <div class="botoncopiar">
+                <button id="copia" class="botones copiar" onclick="portapapeles()" hidden>Copiar</button>
+            </div>
+        </div>
+    </main>
+  
+    <footer>
+        <p class="copyright">&copy Copyright José Martín Cruz Segura - Toluca, México - 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

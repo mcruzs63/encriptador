@@ -1,0 +1,300 @@
+:root {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    --azul-profundo: #609ED4;
+    --azul-profundo2: #356EA9;
+    --azul-profundo3: #0A3871;
+    --azul-profundo4: #072B61;
+    --azul-profundo5: #052051;
+    
+    --azul-ligth: #F3F5FC;
+    --azul-ligth2: #EFF1FA;
+    --azul-ligth3: #E9ECF8;
+    --azul-ligth4: #AAB2D5;
+    --azul-ligth5: #757FB2;
+
+    --gris: #CED4DA;
+    --gris2: #ADB5BD;
+    --gris3: #868E96;
+    --gris4: #495057;
+    --gris5: #343A40;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 2s;
+}
+
+.logo {
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+    left: 250px;
+    gap: 40px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    width: 100vw;
+}
+
+.entrada{
+    position: absolute;
+    margin-top: 20px;
+    left: 20px;
+    color: var(--gris3);
+}
+
+.texto-entrada{
+    position: absolute;
+    width: 350px;
+    height: 170px;
+    margin-top: 40px;
+    border: none;
+    left: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 48px;
+    border-radius: 5px;
+    color: var(--azul-profundo4);
+    padding: 5px;
+}
+
+.muneco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    top: 500px;
+    left: 50px;
+}
+
+.mune-mensaje{
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    top: 800px;
+    left: 50px;
+    gap: 16px;
+}
+
+.texto-salida{
+    position: absolute;
+    border-radius: 5px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    margin-top: 500px;
+    width: 350px;
+    height: 650px;
+    left: 25px;
+    padding: 10px;
+    box-shadow: 10px 24px 32px -10px rgba(0, 0, 0, 0.4);
+}
+
+.container-botones {
+    padding: 16px 24px;
+    width: 680px;
+    font-size: 24px;
+    border: none;
+    margin-top: 2rem;
+}
+
+.texto-botones{
+    position: absolute;
+    font-family: Inter;
+    color: var(--gris3);
+    margin-top: 220px;
+    left: 25px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.botones{
+    position: absolute;
+    font-family: Inter;
+    color: white;
+    height: 67px;
+    margin-top: 250px;
+    width: 300px;
+    left: 25px;
+    gap: 24px;
+    border-radius: 37px;
+    background: var(--azul-profundo2);
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid;
+    cursor: pointer;
+    align-items: center;
+}
+
+.desencriptar {
+    background: white;
+    top: 100px;
+    color: black;    
+}
+
+.copiar{
+    top:800px;
+    left: 50px;
+}
+
+.botones:hover{
+    background: white;
+    color: black;
+    transform: scale(0.9);
+}
+
+.desencriptar:hover{
+    background: var(--azul-profundo2);
+    color: white;
+}
+
+.copyright {
+    position: absolute;
+    top:1300px;
+    padding: 20px;
+    left: 40px;
+    color: var(--azul-profundo4);
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 780px) {
+
+    .entrada {
+        margin-top: 20px;
+        left: 25px;
+    }
+
+    .texto-entrada{
+        width: 650px;
+        height: 200px;
+        margin-top: 40px;
+        left: 25px;
+    }
+
+    .muneco{
+        top: 500px;
+        left: 170px;
+    }
+
+    .mune-mensaje{
+        top: 800px;
+        left: 170px;
+        gap: 16px;
+    }
+
+    .texto-salida{
+        margin-top: 500px;
+        width: 700px;
+        height: 650px;
+        left: 25px;
+    }
+
+    .container-botones {
+        width: 200px;
+    }
+
+    .texto-botones{
+        top: 40px;
+        left: 25px;
+    }
+
+    .botones{
+        top: 50px;
+        width: 300px;
+        left: 25px;
+    }
+
+    .desencriptar {
+        left: 350px;
+    }
+
+    .copiar{
+        top: 800px;
+        left: 220px;
+    }
+
+    .copyright {
+        top:1300px;
+        text-align: center;
+        align-items: center;
+        
+        font-size: 13px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    .entrada {
+        left: 250px;
+    }
+
+    .texto-entrada{
+        width: 600px;
+        height: 500px;
+        margin-top: 40px;
+        left: 250px;
+    }
+
+    .muneco{
+        top: 100px;
+        left: 1032px;
+    }
+
+    .mune-mensaje{
+        top: 400px;
+        left: 1032px;
+        gap: 16px;
+    }
+    
+    .texto-salida{
+        margin-top: 40px;
+        width: 400px;
+        height: 660px;
+        left: 1000px;
+    }
+    
+    .container-botones {
+        width: 680px;
+        font-size: 24px;
+        top: 450px;
+    }
+
+    .texto-botones{
+        top: 350px;
+        left: 250px;
+    }
+
+    .botones{
+        top: 350px;
+        left: 240px;
+        gap: 24px;
+    }
+
+    .desencriptar {
+        top: 350px;
+        left: 550px;
+    }
+
+    .copiar{
+        top: 350px;
+        left: 1051px;
+    }
+
+    .copyright {
+        top: 775px;
+        left: 500px;
+    }
+
+}
